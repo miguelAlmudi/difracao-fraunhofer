@@ -1,0 +1,12 @@
+{
+  "largura_mm": 1.0,
+  "altura_mm": 1.0,
+  "onda_nm": 633.0,
+  "distancia_m": 5.0,
+  "fresnel": 0.027460999210110578,
+  "padding": 4,
+  "origem": "dupla.png",
+  "limiar": 128,
+  "invertida": false,
+  "convencao": "Branco=passagem; largura da imagem inteira; pixels quadrados."
+}

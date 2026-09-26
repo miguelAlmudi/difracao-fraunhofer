@@ -1,0 +1,12 @@
+{
+  "largura_mm": 1.0,
+  "altura_mm": 1.0,
+  "onda_nm": 633.0,
+  "distancia_m": 5.0,
+  "fresnel": 0.02098143759873617,
+  "padding": 4,
+  "origem": "simples",
+  "limiar": 128,
+  "invertida": false,
+  "convencao": "Branco=passagem; largura da imagem inteira; pixels quadrados."
+}
