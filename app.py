@@ -7,6 +7,7 @@ from matplotlib.figure import Figure
 from fisica import exemplo, carregar_png, calcular
 from graficos import desenhar, salvar
 from montagem import desenhar_montagem
+from sandbox import Sandbox
 
 
 def criar_app():
@@ -20,6 +21,13 @@ def criar_app():
     area.pack(side='right', fill='both', expand=True)
     estado = {'arquivo': None, 'resultado': None}
     montagem = {'janela': None}
+    bancada = {'app': None}
+
+    def abrir_sandbox():
+        if bancada['app'] is None or not bancada['app'].janela.winfo_exists():
+            bancada['app'] = Sandbox(janela)
+        else:
+            bancada['app'].janela.lift()
     campos = {}
     ttk.Label(painel, text='Difração de Fraunhofer', font=('', 13, 'bold')).pack(anchor='w', pady=(0, 12))
     fonte = tk.StringVar(value='simples')
@@ -167,6 +175,7 @@ def criar_app():
     botao_salvar = ttk.Button(painel, text='Salvar gráficos e dados…', command=exportar)
     botao_salvar.pack(fill='x')
     ttk.Button(painel, text='Ver montagem visual…', command=abrir_montagem).pack(fill='x', pady=(6, 0))
+    ttk.Button(painel, text='Abrir sandbox óptico…', command=abrir_sandbox).pack(fill='x', pady=(6, 0))
     ttk.Label(painel, textvariable=status, wraplength=230).pack(anchor='w', pady=12)
     ttk.Label(painel, text='Branco = luz; preto = bloqueio.\nA largura é da imagem inteira.\nAltura automática; pixels quadrados.\nApós editar, clique em Calcular.',
               wraplength=230, foreground='#555555').pack(anchor='w')
@@ -175,7 +184,8 @@ def criar_app():
     return janela, dict(campos=campos, fonte=fonte, escala=escala, inverter=inverter,
                         estado=estado, atualizar=atualizar, usar_exemplo=usar_exemplo,
                         redesenhar=redesenhar, exportar=exportar, carregar=carregar, figura=figura,
-                        abrir_montagem=abrir_montagem, montagem=montagem)
+                        abrir_montagem=abrir_montagem, montagem=montagem,
+                        abrir_sandbox=abrir_sandbox, bancada=bancada)
 
 
 if __name__ == '__main__':

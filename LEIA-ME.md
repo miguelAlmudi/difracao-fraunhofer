@@ -34,6 +34,9 @@ de modo que a expansão ou contração das franjas seja perceptível.
 
 ## Testar por partes
 
+Há também uma bancada interativa em **Abrir sandbox óptico…**, com múltiplos objetos
+arrastáveis e propagação de Fresnel. Consulte [SANDBOX.md](SANDBOX.md).
+
 1. `python fisica.py`: recria os três PNGs na pasta `exemplos`.
 2. `python testes.py`: verifica mínimos de difração, curvas analíticas de fendas,
    simetria circular, unidades, leitura de PNG, validações e exportação.

@@ -1,5 +1,13 @@
 # Validação realizada
 
+Sandbox: oito testes físicos adicionais passaram (expansão gaussiana analítica,
+energia, fontes independentes, bloqueio por aberturas, inclinação e sensores).
+O teste de integração exercitou seleção/arraste, quatro formas, inclusão,
+duplicação, remoção, alternância linear/log, salvar/abrir JSON e reabertura da
+janela. As mesmas rotinas dos eventos de mouse foram chamadas com coordenadas
+de teste; os diálogos de arquivo receberam respostas automáticas. Os sete testes
+anteriores de Fraunhofer também passaram.
+
 Atualização da montagem visual: testadas as três aberturas, escalas linear/log,
 atualização da distância, área visível da parede, abertura sem duplicar janelas,
 fechamento e reabertura. A imagem exportada foi inspecionada visualmente.

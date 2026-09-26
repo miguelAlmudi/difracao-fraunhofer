@@ -1,0 +1,43 @@
+{
+  "versao": 1,
+  "onda_nm": 633.0,
+  "resolucao": 256,
+  "objetos": [
+    {
+      "id": 1,
+      "tipo": "fonte",
+      "z": 0.1,
+      "y": 0.0,
+      "forma": "dupla",
+      "tamanho": 0.6,
+      "altura": 1.0,
+      "separacao": 0.6,
+      "potencia": 1.0,
+      "angulo": 0.0
+    },
+    {
+      "id": 2,
+      "tipo": "abertura",
+      "z": 0.3,
+      "y": 0.0,
+      "forma": "dupla",
+      "tamanho": 0.2,
+      "altura": 1.0,
+      "separacao": 0.6,
+      "potencia": 1.0,
+      "angulo": 0.0
+    },
+    {
+      "id": 3,
+      "tipo": "anteparo",
+      "z": 0.8,
+      "y": 0.0,
+      "forma": "dupla",
+      "tamanho": 3.0,
+      "altura": 1.0,
+      "separacao": 0.6,
+      "potencia": 1.0,
+      "angulo": 0.0
+    }
+  ]
+}
